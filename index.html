@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- General config -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Site description -->
+    <title>Carlos G&oacute;mez Pino</title>
+    <meta name="description" content="Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la programación y la informática en general.">
+    <meta name="keywords" content="Curriculum, Carlos Gómez Pino, Full Stack Web Developer">
+    <meta name="author" content="Carlos Gómez Pino">
+    <link rel="canonical" href="http://leia.rockstardevops.com">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="card">
+    <meta name="twitter:site" content="@cgomez_34">
+    <meta name="twitter:title" content="Carlos Gómez Pino">
+    <meta name="twitter:description" content="Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la programación y la informática en general.">
+    <meta name="twitter:summary" content="summary">
+    <meta name="twitter:creator" content="@cgomez_34">
+    <meta name="twitter:image" content="http://leia.rockstardevops.com/images/profile-photo.jpg">
+
+    <!-- Open ghrap -->
+    <meta property="og:title" content="Carlos Gómez Pino">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://leia.rockstardevops.com">
+    <meta property="og:image" content="http://leia.rockstardevops.com/images/profile-photo.jpg">
+    <meta property="og:description" content="Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la programación y la informática en general.">
+
+    <!-- Resources links -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
+    <script>
+        function initialize() {
+            var myLatLng = { lat: 37.586281, lng: -4.640045 };
+
+            var mapProp = {
+                center: myLatLng,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Aqui estamos'
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item navbar__item--active">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="navbar__item ">
+                <a href="#presentacion">Presentacion</a>
+            </li>
+            <li class="navbar__item ">
+                <a href="#quien-soy">Quien soy</a>
+            </li>
+            <li class="navbar__item ">
+                <a href="#estudios">Estudios</a>
+            </li>
+            <li class="navbar__item ">
+                <a href="#experiencia">Experiencia</a>
+            </li>
+            <li class="navbar__item ">
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">Carlos Gomez Pino</h1>
+        <div class="header__image"></div>
+        <p class="header__cite">"Failure doesn't mean the GAME OVER, it means try again with EXPERIENCE"</p>
+    </header>
+
+    <main class="container">
+
+        <section id="presentacion" class="section-container">
+            <h2 class="presentacion__title">PRESENTACIÓN</h2>
+            <div class="presentacion__video">
+                <div class="row-flex">
+                    <div class="flex__item">
+                        <video id="video" width="550" height="300" controls>
+                            <source src="./video/hackingTime.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="flex__item">
+                        <h3>"IT'S HACKING TIME!"</h3>
+                        <p class="flex-item__description">YOU'RE ABOUT TO HACK TIME, ARE YOU SURE?</p>
+                        <p class="flex-item__description"> >YES &nbsp; NO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quien-soy" class="section-container">
+            <h2 class="quien-soy__title">¿QUIÉN SOY?</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <h3>Sobre mi:</h3>
+                    <p class="flex-item__description">Soy ingeniero informático con especialidad en ciencias de la computación.</p>
+                    <p class="flex-item__description">Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la programación y la informática en general.</p>
+                    <div class="row-flex">
+                        <div class="flex__item"><a href="https://github.com/cgpino"><img class="flex-item__social" src="./images/github-button.png" alt="Sígueme en Github"></a></div>
+                        <div class="flex__item"><a href="https://twitter.com/cgomez_34"><img class="flex-item__social" src="./images/twitter-button.png" alt="Sígueme en Twitter"></a></div>
+                        <div class="flex__item"><a href="https://www.linkedin.com/in/carlos-g%C3%B3mez-pino-169b37154/"><img class="flex-item__social" src="./images/linkedin-button.png" alt="Sígueme en Linkedin"></a></div>
+                    </div>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img class="flex-item__image" src="./images/profile-photo.jpg" alt="Perfil">
+                    </figure>
+                </div>
+                <div class="flex__item">
+                    <h3>Nombre:</h3>
+                    <p class="flex-item__description">Carlos Gómez Pino</p>
+                    <h3>Fecha de nacimiento:</h3>
+                    <p class="flex-item__description">11/11/1994</p>
+                    <h3>Localización:</h3>
+                    <p class="flex-item__description">Córdoba, España</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estudios" class="section-container">
+            <h2 class="estudios__title">ESTUDIOS</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <h2>Educación:</h2>
+                    <ul class="estudios__list">
+                        <li class="estudios__item">
+                            <p>Web Startup Engineering Bootcamp</p>
+                            <p class="flex-item__description">KeepCoding, 2017 - (En curso)</p>
+                        </li>
+                        <br>
+                        <li class="estudios__item">
+                            <p>Grado en Ingeniería Informática</p>
+                            <p class="flex-item__description">Universidad de Córdoba, 2013 - 2017</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex__item">
+                    <h2>Cursos:</h2>
+                    <ul class="estudios__list">
+                        <li class="estudios__item">
+                            <p>Trinity ISE I (B1 Inglés)</p>
+                            <p class="flex-item__description">Trinity College, 2016</p>
+                        </li>
+                        <br>
+                        <li class="estudios__item">
+                            <p>Cisco Certified Network Associate I</p>
+                            <p class="flex-item__description">Universidad de Córdoba, 2016</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section-container">
+            <h2 class="experiencia__title">EXPERIENCIA</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <ul class="experiencia__list">
+                        <li class="experiencia__item">
+                            <h3>Ingenierio informático en Ayuntamiento de Montilla (Córdoba)</h3>
+                            <p class="flex-item__description">Proyectos de Smart Cities para la ciudad y técnico de sistema informáticos, 2017 - (En curso)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-container">
+            <h2 class="contacto__title">CONTACTO</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <div id="googleMap"></div>
+                </div>
+                <div class="flex__item">
+                    <div class="contact_section">
+                    <form name="contacto" method="get" novalidate>
+                        <ul class="contacto__list">
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Nombre y apellidos:
+                                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Correo electrónico:
+                                        <input type="text" id="email" name="email" placeholder="ej: ejemplo@empresa.com">
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Nº de teléfono:
+                                        <input type="text" id="telefono" name="telefono" placeholder="ej: +34 123456789">
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        ¿Cómo me has conocido?:
+                                        <p class="flex-item__flex-item__choices">
+                                            <label for="tipo_conocido_1">Búsqueda en internet</label>
+                                            <input type="radio" id="tipo_conocido_1" name="tipo_conocido" value="internet" required>
+                                            &nbsp;
+                                            <label for="tipo_conocido_2">Conocido común</label>
+                                            <input type="radio" id="tipo_conocido_2" name="tipo_conocido" value="conocido" required>
+                                            &nbsp;
+                                            <label for="tipo_conocido_3">Otro</label>
+                                            <input type="radio" id="tipo_conocido_3" name="tipo_conocido" value="otro" required>
+                                        </p>
+                                        <div id="tipo_conocido_otro">
+                                            <textarea class="message__other" rows="4" cols="90" name="tipo_conocido_otro_mensaje" id="tipo_conocido_otro_mensaje" placeholder="¿Cómo me has conocido? (opcional)" hidden></textarea>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Mensaje:
+                                        <div id="contacto_mensaje_detalle">
+                                            <textarea rows="4" cols="90" name="contacto_mensaje" id="contacto_mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <div class="form-row">
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
+                        </ul>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <footer class="footer row-flex">
+        Carlos Gomez Pino &copy; 2018
+    </footer>
+
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/full-screen.js"></script>
+
+    <script src="./scripts/notifications.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/ajax.js"></script>
+</body>
+
+</html>

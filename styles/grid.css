@@ -1,0 +1,101 @@
+body {
+  --grid-size: 12;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section-container {
+  padding: 50px 0;
+}
+
+section:nth-child(even) {
+  background: linear-gradient(to bottom right, rgb(42, 45, 49), rgb(0, 0, 0));
+  color: var(--main-text-color);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+section:nth-child(even) > div {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section:nth-child(2n+1) {
+  background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(129, 129, 129));
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+section:nth-child(2n+1) > div {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.contact_section {
+  background: linear-gradient(to bottom right, rgb(42, 45, 49), rgb(0, 0, 0));
+  outline-style: groove;
+  color: var(--main-text-color);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  font-size: 0.8rem;
+}
+
+#googleMap {
+  width: 400px;
+  height: 500px;
+  background: rgb(42, 45, 49);
+  outline-style: groove;
+}
+.form {
+  padding: 0 1.2rem;
+}
+
+.form .form-row {
+  padding: 0.8rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #2d2c66;
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: textFont
+}
+
+.flex__item > .flex-item__description {
+  font-size: 0.8rem;
+}
+
+.flex__item > .flex-item__description > .flex-item__choices {
+  font-size: 2.5rem;
+}
